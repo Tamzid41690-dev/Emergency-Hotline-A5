@@ -1,4 +1,4 @@
-//funtionality 
+//shared Function//
 
 function callbtncost(id , alertmsg){
     const callbtn = document.getElementById(id);
@@ -15,7 +15,39 @@ function callbtncost(id , alertmsg){
     });
 };
 
+function callhistory(id,id2,id3){
+    const callhistorybtn = document.getElementById(id);
+    callhistorybtn.addEventListener('click', function() {
+        const callhistory = document.getElementById('call-history');
+        const div = document.createElement('div');
+        const serviceName = document.getElementById(id2).innerText;
+        const serviceNumber = document.getElementById(id3).innerText;
+        div.innerHTML = `
+        <div class="flex justify-between gap-4 items-center m-2 bg-gray-50 p-3 rounded-2xl">
+                <div>
+                    <h1 class="font-bold">${serviceName}</h1>
+                    <p class="text-[#5c5c5c]">${serviceNumber}</p>
+                </div>
+                <p>${new Date().toLocaleDateString()}</p>
+        `;
+        callhistory.appendChild(div);
 
+    });
+};
+
+//Shared Function ends here //
+// call history functionality //
+
+callhistory('call-b1','service-name-1','service-num-1');
+callhistory('call-b2','service-name-2','service-num-2');
+callhistory('call-b3','service-name-3','service-num-3');
+callhistory('call-b4','service-name-4','service-num-4');
+callhistory('call-b5','service-name-5','service-num-5');
+callhistory('call-b6','service-name-6','service-num-6');
+callhistory('call-b7','service-name-7','service-num-7');
+callhistory('call-b8','service-name-8','service-num-8');
+callhistory('call-b9','service-name-9','service-num-9');
+// call history functionality ends here //
 
 //heart icon and heart count //
 
@@ -77,4 +109,10 @@ callbtncost('call-b6','Calling Anti Curroption Helpline 106....');
 callbtncost('call-b7','Calling Electrcity Helpline 16216....');
 callbtncost('call-b8','Calling BRAC Helpline 16445....');
 callbtncost('call-b9','Calling Bangladesh Railway Helpline 999....');
+
+//clear button functionality //
+document.getElementById('clear-btn').addEventListener('click', function() {
+    const callhistory = document.getElementById('call-history');
+    callhistory.innerHTML = '';
+});
 
