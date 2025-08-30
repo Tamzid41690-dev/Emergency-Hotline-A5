@@ -4,8 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+</head>
+<body class="container mx-auto">
+    <!-- nav section -->
+    <nav class="border-b border-gray-200 bg-blue px-4 py-2.5 dark:bg-gray-800 p-15 ml-10 mr-10 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="" class="h-15 w-15">
+            <h1 class="text-[#006747] text-2xl font-extrabold">Emergency <br> Service</h1>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="flex justify-evenly items-center gap-2  pl-4 pr-4 pt-2 pb-2 rounded-3xl bg-[#41ff6b1a] ">
+                <h1>0</h1>
+                <img src="./assets/heart.png" alt="" class="h-6 w-6">
+            </div>
+            <div class="flex justify-evenly items-center gap-2  bg-[#41ff6b1a] pl-4 pr-4 pt-2 pb-2 rounded-3xl">
+                <h1>100</h1>
+                <img src="./assets/coin.png" alt="" class="h-6 w-6">
+
+            </div>
+            <div>
+                <button class="btn bg-[#00a63e] p-6 rounded-3xl ">2 Copy</button>
+            </div>
+        </div>
+    </nav>
+    <!-- banner section -->
+    <div class="flex flex-col gap-5 justify-center items-center text-center pt-5 pb-10 bg-gradient-to-r from-green-900 via-green-700 to-green-900">
+        <img src="./assets/logo-dark.png" alt="" class="w-20 h-20 mt-10 rounded-3xl">
+        <h1 class="text-white font-bold text-3xl">Emergency Service Directory</h1>
+        <p class="text-white font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+    <!-- main section -->
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 p-10">
+
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5">
+                <button class="btn ">copy</button>
+                <button class="btn ">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 row-span-3">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%]">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+        <div class="border-2 border-blue-500 ">
+            <div class="flex justify-between items-center m-5">
+                <img src="./assets/emergency.png" alt="" class="h-6 w-6">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="flex flex-col gap-2 m-5">
+                <h1 class="text-2xl font-semibold">National Emergency number</h1>
+                <p class="text-[#5c5c5c]">National Emergency</p>
+                <h1 class="font-bold">999</h1>
+                <p class="text-[#5c5c5c]  inline-block pl-4 pr-4 bg-[#f2f2f2] rounded-3xl w-[4%] text-center">All</p>
+            </div>
+            <div class="m-5 flex gap-2">
+                <button class="btn w-[50%] ">copy</button>
+                <button class="btn w-[50%]">call</button>
+            </div>
+
+        </div>
+
+    </main>
 </body>
 </html>
