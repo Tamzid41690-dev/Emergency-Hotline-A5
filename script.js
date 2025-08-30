@@ -28,12 +28,20 @@ function callhistory(id,id2,id3){
                     <h1 class="font-bold">${serviceName}</h1>
                     <p class="text-[#5c5c5c]">${serviceNumber}</p>
                 </div>
-                <p>${new Date().toLocaleDateString()}</p>
+                <p>${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</p>
         `;
         callhistory.appendChild(div);
 
     });
 };
+
+function incrementCopyCount() {
+     const countnumber = document.getElementById('copy-count');
+    const count = parseInt(countnumber.innerText);
+    countnumber.innerText = count + 1;
+};
+
+
 
 //Shared Function ends here //
 // call history functionality //
@@ -116,3 +124,112 @@ document.getElementById('clear-btn').addEventListener('click', function() {
     callhistory.innerHTML = '';
 });
 
+
+
+// copy button functionality //
+// From gpt as per requirements//
+document.getElementById('copy-btn-1').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-1').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+            incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+
+
+document.getElementById('copy-btn-2').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-2').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-3').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-3').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-4').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-4').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-5').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-5').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+
+
+
+document.getElementById('copy-btn-6').addEventListener('click', function() {
+
+    const textToCopy = document.getElementById('service-num-6').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-7').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-7').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-8').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-8').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
+document.getElementById('copy-btn-9').addEventListener('click', function() {
+    const textToCopy = document.getElementById('service-num-9').innerText;
+    navigator.clipboard.writeText(textToCopy)
+        .then(() => {
+             incrementCopyCount(); 
+            alert('Copied: ' + textToCopy);
+        })
+        .catch(() => {
+            alert('Failed to copy!');
+        });
+});
